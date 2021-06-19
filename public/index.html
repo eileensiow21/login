@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="functions.js" type="application/javascript"></script>
+</head>
+<body onload="setup()">
+<h1>Test</h1>
+<div id="login-content" style="display: none;">
+    <h2>Login</h2>
+    <label for="username">Username or email</label><br><input type="text" id="username"><br>
+    <label for="password">Password</label><br><input type="password" id="password"><br>
+    <div id="feedback"></div>
+    <button onClick="login()">Login</button>
+</div>
+
+<div id="register-content" style="display: none;">
+    <h2>Register</h2>
+    <label for="nameR">Name</label><br><input type="text" id="nameR"><br>
+    <label for="emailR">Email</label><br><input type="text" id="emailR"><br>
+    <label for="usernameR">Username</label><br><input type="text" id="usernameR"><br>
+    <label for="passwordR">Password</label><br><input type="password" id="passwordR"><br>
+    <label for="passwordRR">Repeat password</label><br><input type="password" id="passwordRR"><br>
+    <div id="feedback-register"></div>
+    <button onClick="register()">Register</button>
+</div>
+<br>
+<button onClick="showRegister()" id="toggle-register" style="display: none;">Don't have account? Register</button>
+<div id="authenticated-content" style="display: none;">
+    <button onClick="logout()">Logout</button>
+    <label for="passwordchange">Change password</label><br><input type="password" id="passwordchange"><br>
+    <label for="passwordchange2">Repeat password</label><br><input type="password" id="passwordchange2"><br>
+    <div id="feedback-password"></div>
+    <button onClick="changePassword()">Change password</button>
+</div>
+</body>
+</html>
